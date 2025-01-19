@@ -129,6 +129,8 @@ security:
         - { path: "%sylius.security.api_shop_route%/customers/token", role: PUBLIC_ACCESS }
         - { path: "%sylius.security.api_shop_regex%/.*", role: PUBLIC_ACCESS }
 
+
+
 when@test: &security_test
     security:
         password_hashers:
