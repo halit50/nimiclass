@@ -1,0 +1,11 @@
+sylius_twig_hooks:
+    hooks:
+        sylius_shop.base.header.content.logo:
+            content:
+                template: 'header/content/logo/content/logo.html.twig'
+        sylius_shop.base.header:
+            top_bar:
+                enabled: false
+        sylius_shop.base.footer.content:
+            copy:
+                template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/_copy.html.twig'
