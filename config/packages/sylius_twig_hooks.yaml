@@ -1,11 +1,18 @@
 sylius_twig_hooks:
     hooks:
+        sylius_shop.homepage.index:
+            banner:
+                template: 'bundles/SyliusShopBundle/homepage/banner.html.twig'
         sylius_shop.base.header.content.logo:
             content:
-                template: 'header/content/logo/content/logo.html.twig'
+                template: 'bundles/SyliusShopBundle/header/content/logo/content/logo.html.twig'
         sylius_shop.base.header:
             top_bar:
                 enabled: false
         sylius_shop.base.footer.content:
             copy:
                 template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/_copy.html.twig'
+            menu:
+                template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/menu.html.twig'
+            payment_methods:
+                template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/payment_methods.html.twig'
