@@ -25,6 +25,8 @@
     ],
     "require": {
         "php": "^8.2",
+        "flux-se/sylius-stripe-plugin": "dev-main",
+        "stripe/stripe-php": "^16.5",
         "sylius/sylius": "~2.0.0",
         "symfony/dotenv": "^6.4 || ^7.1",
         "symfony/flex": "^2.4",
@@ -60,6 +62,7 @@
         "symfony/debug-bundle": "^6.4 || ^7.1",
         "symfony/http-client": "^6.4 || ^7.1",
         "symfony/intl": "^6.4 || ^7.1",
+        "symfony/maker-bundle": "^1.62",
         "symfony/web-profiler-bundle": "^6.4 || ^7.1"
     },
     "config": {
