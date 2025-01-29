@@ -16,3 +16,6 @@ sylius_twig_hooks:
                 template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/menu.html.twig'
             payment_methods:
                 template: 'bundles/SyliusShopBundle/shared/layout/base/footer/content/payment_methods.html.twig'
+        sylius_shop.checkout.select_payment.content.form:
+            navigation:
+                template: 'bundles/SyliusShopBundle/checkout/select_payment/content/form/navigation.html.twig'

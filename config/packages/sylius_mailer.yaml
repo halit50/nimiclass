@@ -1,0 +1,5 @@
+sylius_mailer:
+    sender:
+        name: NimiClass
+        address: nimiclass@outlook.fr
+    sender_adapter: sylius.email_sender.adapter.symfony_mailer
