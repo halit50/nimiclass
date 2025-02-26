@@ -1,3 +1,13 @@
+# Autoriser uniquement ton IP à accéder au site
+RewriteEngine On
+RewriteCond %{REMOTE_ADDR} !^192\.168\.1\.125
+RewriteCond %{REQUEST_URI} !^/maintenance.html$
+RewriteCond %{REQUEST_URI} !\.(css|jpg|png|gif|js)$
+RewriteRule ^.*$ /maintenance.html [R=503,L]
+
+# Retourne un code 503 pour indiquer une maintenance (SEO friendly)
+Header always set Retry-After "3600"
+
 # Use the front controller as index file. It serves as a fallback solution when
 # every other rewrite/redirect fails (e.g. in an aliased environment without
 # mod_rewrite). Additionally, this reduces the matching process for the
